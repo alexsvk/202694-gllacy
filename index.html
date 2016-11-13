@@ -2,11 +2,203 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Глейси Шоп</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <!--******************* bubble controls ***************************-->
+    <!--перед .screen-fixator, потому что .screen-fixator станет родственным для input-ов
+    каждый контрол в состоянии checked сменит цвет и картинку фона main,
+    видимый текст и кнопку слайда, и активный лейбл для контроля слайдов
+    -->
+    <input type="radio" id="slider-btn-1" name="toggle">
+    <input type="radio" id="slider-btn-2" name="toggle">
+    <input type="radio" id="slider-btn-3" name="toggle">
+    <!--***************************************************************-->
+
+    <div class="fixator"><!--1240 px width-->
+
+      <div class="fixed-width-content"><!--100% width and 20px padding-->
+
+        <header>
+
+          <img class="logo" alt="Глейси Шоп лого"> <!--absolute-->
+
+          <nav class="text-menu"><!--560px-->
+            <ul><!--remove padding-left, margin-top, and margin-bottom-->
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">О компании</a></li>
+            </ul>
+          </nav>
+
+          <nav class="menu-icons"><!--560px-->
+              <div class="search">
+                <img src="img/" class="icon" alt="search icon">
+              </div>
+
+              <div class="entrance">
+                <img src="img/" class="icon" alt="entrance icon">
+                <span class="icon-title">Вход</span>
+              </div>
+
+              <div class="bin">
+                <img src="img/" class="icon" alt="buys icon">
+                <span class="icon-title">Пусто</span>
+              </div>
+          </nav><!--menu-icons-->
+
+          <section class="info-container">
+            <section class="schedule">С 10 до 20, ежедневно</section>
+            <section class="tel-number">8 812 450-25-25</section>
+          </section>
+
+        </header>
+
+        <section class="slider">
+
+          <div class="slide">
+            <h3 class="title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <a href="#" class="buy">Давайте оба!</a>
+          </div>
+          <div class="slide">
+            <h3 class="title">Шоколадный пломбир и лимонный сорбет</h3>
+            <a href="#" class="buy">Давайте оба!</a>
+          </div>
+          <div class="slide">
+            <h3 class="title">Пломбир с помадкой и клубничный щербет</h3>
+            <a href="#" class="buy">Давайте оба!</a>
+          </div>
+
+          <div class="slider-controls">
+            <label for="slider-btn-1"></label>
+            <label for="slider-btn-2"></label>
+            <label for="slider-btn-3"></label>
+          </div>
+
+        </section><!--slider-->
+
+        <section class="promos">
+          <article class="promo strawberry"><!--width 560px height 230px-->
+            <h1>Малинка даром</h1>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a href="#">Хочу варенья!</a>
+          </article>
+          <article class="promo chocolate"><!--width 560px height 230px-->
+            <h1>Шоколадки даром!</h1>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a href="#">Хочу шоколада!</a>
+          </article>
+        </section><!--promos-->
+
+        <section class="popular-ice-creams"><!--height 403 px-->
+          <article class="first"><!--width 267 px-->
+            <img class="picture">
+            <a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <div class="price">310&#8381;/кг</div>
+            <div class="hit">ХИТ</div>
+          </article>
+          <article class="second">
+            <img class="picture">
+            <a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
+            <div class="price">380&#8381;/кг</div>
+            <div class="hit">ХИТ</div>
+          </article>
+          <article class="third">
+            <img class="picture">
+            <a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <div class="price">355&#8381;/кг</div>
+            <div class="hit">ХИТ</div>
+          </article>
+          <article class="fourth">
+            <img class="picture">
+            <a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
+            <div class="price">415&#8381;/кг</div>
+            <div class="hit">ХИТ</div>
+          </article>
+        </section><!--pop-ice-creams-->
+
+        <section class="seo">
+          <h1>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+          <div class="own-means">
+            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            <div class="icon icon-own-means"></div>
+          </div>
+          <div class="raw-milk">
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            <div class="icon icon-raw-milk"></div>
+          </div>
+          <div class="our-providers">
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <div class="icon icon-our-providers"></div>
+          </div>
+          <div class="delivery">
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            <div class="icon icon-delivery"></div>
+          </div>
+        </section>
+
+        <section class="communication">
+          <div class="blog-ad"><!--width 560px height 220px-->
+            <h2>Новое в нашем блоге</h2>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </div>
+
+          <div class="subscription"><!--width 560px height 220px-->
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+            <form action="#" method="get" class="subscribe">
+              <input type="email" name="email" id="send-email" placeholder="Электронная почта" required>
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+        </section><!--communication-->
+
+        <footer>
+          <div class="social-networks">
+            <img src="" alt="twitter">
+            <img src="" alt="instagram">
+            <img src="" alt="facebook">
+            <img src="" alt="vkontakte">
+          </div>
+
+          <div class="docs">
+            <a href="#">Для поставщиков</a>
+            <a href="#">Наши документы</a>
+            <a href="#">О производстве</a>
+            <a href="#">Экологические стандарты</a>
+            <img src="img/" alt="Heart icon">
+          </div>
+
+          <div class="company">
+            <img src="img/" alt="Глейси Шоп лого">
+            Сделано в <a href="#">HTML Academy</a> &copy; 2016
+          </div>
+        </footer>
+
+      </div><!--fixed-width-content-->
+
+      <!--************************КАРТА***************************************-->
+
+      <section class="map"><!--1240px width, relative-->
+        <script></script><!--map 100% width-->
+        <div class="dialog"><!--absolute-->
+          <div class="address">
+            Адрес главного офиса и<br>офлайн магазина:
+            <span class="location">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
+          </div>
+
+          <div class="tel">
+            Для заказов по телефону:<br>
+            <span class="number">8 812 450-25-25</span><br>
+            (с 10 до 20 ежедневно)
+          </div>
+
+          <a href="#" class="communication">Форма обратной связи</a>
+        </div><!--dialog-->
+      </section><!--map-->
+
+    </div><!--fixator-->
 
   </body>
 </html>
