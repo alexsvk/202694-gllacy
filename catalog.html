@@ -13,7 +13,7 @@
 
         <header>
 
-          <a href="#"><img class="logo" alt="Глейси Шоп лого"></a> <!--absolute-->
+          <a href="#"><img style="background-color: black;" src="img/header/Logo.png" class="logo" alt="Глейси Шоп лого"></a> <!--absolute-->
 
           <nav class="text-menu"><!--560px-->
             <ul><!--remove padding-left, margin-top, and margin-bottom-->
@@ -35,7 +35,7 @@
 
               <div class="bin">
                 <div icon="icon"></div>
-                <span class="icon-title">Пусто</span>
+                <span class="icon-title">2 товара</span>
               </div>
           </div><!--menu-icons-->
 
@@ -53,13 +53,15 @@
             <span class="current-breadcrumb">Сливочное</span>
           </section>
 
-          <h1>Сливочное мороженое</h1>
+          <h1 class="current-ice-cream-type">Сливочное мороженое</h1>
 
           <section class="controls">
             <div class="control">
               <label for="sort-by" class="control-label">Сортировка:</label>
               <select name="sort-by" id="sort-by">
-                <option value="по популярности"></option>
+                <option value="popular">по популярности</option>
+                <option value="cheap">вверх по цене</option>
+                <option value="expensive">вниз по цене</option>
               </select>
             </div>
 
@@ -75,7 +77,7 @@
             </div>
 
             <div class="control">
-              <label class="control-label">Сортировка:</label>
+              <label class="control-label">Жирность:</label>
               <label class="fatness-label"><input type="radio" name="fatness"> 0%</label>
               <label class="fatness-label"><input type="radio" name="fatness" checked> до 10%</label>
               <label class="fatness-label"><input type="radio" name="fatness"> до 30%</label>
@@ -85,10 +87,10 @@
             <div class="control">
               <label class="control-label">Наполнители:</label>
               <label class="filler-label"><input type="checkbox" name="filler" checked> шоколадные</label>
-              <label class="filler-label"><input type="radio" name="filler" checked> сахарные присыпки</label>
-              <label class="filler-label"><input type="radio" name="filler"> фрукты</label>
-              <label class="filler-label"><input type="radio" name="filler"> сиропы</label>
-              <label class="filler-label"><input type="radio" name="filler"> джемы</label>
+              <label class="filler-label"><input type="checkbox" name="filler" checked> сахарные присыпки</label>
+              <label class="filler-label"><input type="checkbox" name="filler"> фрукты</label>
+              <label class="filler-label"><input type="checkbox" name="filler"> сиропы</label>
+              <label class="filler-label"><input type="checkbox" name="filler"> джемы</label>
             </div>
 
             <div class="control">
@@ -99,81 +101,80 @@
           <section class="catalog"><!--table-->
             <ul><!--table-row-->
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/hits/orange.png" alt="Orange ice cream image" class="picture">
                 <a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                <div class="price"></div>
+                <div class="price">310&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/hits/coffee.png" alt="Cofee ice cream image" class="picture">
                 <a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
-                <div class="price"></div>
+                <div class="price">380&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/hits/strawberry.png" alt="Strawberry ice cream image" class="picture">
                 <a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                <div class="price"></div>
+                <div class="price">355&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/hits/meshanina.png" alt="Creme Brulee ice cream image" class="picture">
                 <a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
-                <div class="price"></div>
+                <div class="price">415&#8381;<span class="per-kg">/кг</span></div>
               </li>
             </ul>
             <ul><!--table-row-->
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/ice-creams/cowberry.png" alt="Coweberry ice cream image" class="picture">
                 <a href="#" class="description">Сливочное с брусничным джемом</a>
-                <div class="price"></div>
+                <div class="price">325&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/ice-creams/blueberry.png" alt="Blueberry ice cream image" class="picture">
                 <a href="#" class="description">Сливочно-черничное с цельными ягодами черники</a>
-                <div class="price"></div>
+                <div class="price">410&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/ice-creams/lemon.png" alt="Lemon ice cream image" class="picture">
                 <a href="#" class="description">Сливочно-лимонное с карамельной присыпкой</a>
-                <div class="price"></div>
+                <div class="price">375&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/ice-creams/chocoflakes.png" alt="Chocolate flakes ice cream image" class="picture">
                 <a href="#" class="description">Сливочное с шоколадной стружкой</a>
-                <div class="price"></div>
+                <div class="price">320&#8381;<span class="per-kg">/кг</span></div>
               </li>
             </ul>
             <ul><!--table-row-->
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
-                <a href="#" class="description">Сливочно-ванильное с кусочками шоколада
-</a>
-                <div class="price"></div>
+                <img src="img/ice-creams/vanilla.png" alt="Vanilla ice cream image" class="picture">
+                <a href="#" class="description">Сливочно-ванильное с кусочками шоколада</a>
+                <div class="price">440&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/ice-creams/menthol.png" alt="Menthol ice cream image" class="picture">
                 <a href="#" class="description">Сливочноe с ментоловым сиропом</a>
-                <div class="price"></div>
+                <div class="price">435&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/ice-creams/black-chocolate.png" alt="Black chocolate ice cream image" class="picture">
                 <a href="#" class="description">Сливочное с кусочками черного шоколада</a>
-                <div class="price"></div>
+                <div class="price" style="background-color: red;">355&#8381;<span class="per-kg">/кг</span></div>
               </li>
               <li class="ice-cream"><!--table-cell-->
-                <img src="img/" alt="Ice cream icon" class="picture">
+                <img src="img/ice-creams/mint.png" alt="Mint ice cream image" class="picture">
                 <a href="#" class="description">Сливочное с мятным сиропом</a>
-                <div class="price"></div>
+                <div class="price">420&#8381;<span class="per-kg">/кг</span></div>
               </li>
             </ul>
           </section><!--catalog-->
 
           <section class="catalog-paginator">
-            <a href="#"><img src="img/" alt="To left icon"></a>
+            <a href="#"><img src="img/" alt="Go back icon"></a>
             <a href="#" active>1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
-            <a href="#"><img src="img/" alt="To right icon"></a>
+            <a href="#"><img src="img/" alt="Go forward icon"></a>
           </section><!--catalog-paginator-->
         </main>
 
