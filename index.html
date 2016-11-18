@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
     <title>Глейси Шоп</title>
   </head>
 
@@ -23,7 +26,7 @@
 
         <header>
 
-          <img class="logo" alt="Глейси Шоп лого"> <!--absolute-->
+          <a href="#"><img style="background: black;" src="img/header/Logo.png" class="logo" alt="Глейси Шоп лого"></a> <!--absolute--> <!--absolute-->
 
           <nav class="text-menu"><!--560px-->
             <ul><!--remove padding-left, margin-top, and margin-bottom-->
@@ -94,46 +97,46 @@
 
         <section class="popular-ice-creams"><!--height 403 px-->
           <article class="ice-cream"><!--width 267 px-->
-            <img src="img/" alt="Ice cream icon" class="picture">
+            <img src="img/hits/orange.png" alt="Orange ice cream image" class="picture">
             <a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <div class="price">310&#8381;/кг</div>
-            <div class="hit-label">ХИТ</div>
+            <div class="price">310&#8381;<span class="per-kg">/кг</span></div>
+            <img class="hit-label" style="background: red;" src="img/hits/ХИТ.png">
           </article>
           <article class="ice-cream">
-            <img src="img/" alt="Ice cream icon" class="picture">
+            <img src="img/hits/coffee.png" alt="Cofee ice cream image" class="picture">
             <a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
-            <div class="price">380&#8381;/кг</div>
-            <div class="hit-label">ХИТ</div>
+            <div class="price">380&#8381;<span class="per-kg">/кг</span></div>
+            <img class="hit-label" style="background: red;" src="img/hits/ХИТ.png">
           </article>
           <article class="ice-cream">
-            <img src="img/" alt="Ice cream icon" class="picture">
+            <img src="img/hits/strawberry.png" alt="Strawberry ice cream image" class="picture">
             <a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            <div class="price">355&#8381;/кг</div>
-            <div class="hit-label">ХИТ</div>
+            <div class="price">355&#8381;<span class="per-kg">/кг</span></div>
+            <img class="hit-label" style="background: red;" src="img/hits/ХИТ.png">
           </article>
           <article class="ice-cream">
-            <img src="img/" alt="Ice cream icon" class="picture">
+            <img src="img/hits/meshanina.png" alt="Creme Brulee ice cream image" class="picture">
             <a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
-            <div class="price">415&#8381;/кг</div>
-            <div class="hit-label">ХИТ</div>
+            <div class="price">415&#8381;<span class="per-kg">/кг</span></div>
+            <img class="hit-label" style="background: red;" src="img/hits/ХИТ.png">
           </article>
         </section><!--pop-ice-creams-->
 
         <section class="glacy-intro">
           <h1>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-          <div class="own-means">
+          <div class="our-plus">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            <div class="icon icon-own-means"></div>
+             <div class="icon icon-own-means"></div>
           </div>
-          <div class="raw-milk">
+          <div class="our-plus">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             <div class="icon icon-raw-milk"></div>
           </div>
-          <div class="our-providers">
+          <div class="our-plus">
             <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             <div class="icon icon-our-providers"></div>
           </div>
-          <div class="delivery">
+          <div class="our-plus">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             <div class="icon icon-delivery"></div>
           </div>
@@ -154,6 +157,28 @@
           </div>
         </section><!--communication-->
 
+        <footer>
+          <div class="social-networks">
+            <div class="icon icon-twitter"></div>
+            <div class="icon icon-instagram"></div>
+            <div class="icon icon-fb"></div>
+            <div class="icon icon-vk"></div>
+          </div>
+
+          <div class="docs">
+            <a href="#">Для поставщиков</a>
+            <a href="#">Наши документы</a>
+            <a href="#">О производстве</a>
+            <a href="#">Экологические стандарты</a>
+            <div class="icon icon-heart"></div>
+          </div>
+
+          <div class="company">
+            <img src="img/" alt="Глейси Шоп лого">
+            Сделано в <a href="#">HTML Academy</a> &copy; 2016
+          </div>
+        </footer>
+
       </div><!--fixed-width-content-->
 
       <!--************************КАРТА***************************************-->
@@ -169,10 +194,10 @@
           <div class="tel">
             Для заказов по телефону:<br>
             <span class="number">8 812 450-25-25</span><br>
-            (с 10 до 20 ежедневно)
+            <span class="call-hours"(с 10 до 20 ежедневно)</span>
           </div>
 
-          <a href="#" class="communication">Форма обратной связи</a>
+          <a href="#" class="open-form">Форма обратной связи</a>
         </div><!--dialog-->
       </section><!--map-->
 

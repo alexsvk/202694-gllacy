@@ -1,0 +1,254 @@
+body
+{
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(50, 50, 50);
+  font-family: Roboto-Regular;
+}
+
+/********************************catalog.html***************************************/
+h1.current-ice-cream-type
+{
+  font-size: 35px;
+  line-height: 41px;
+  font-family: Roboto-Bold;
+}
+
+.controls .control
+{
+  line-height: 18px;
+  font-family: Roboto-Medium;
+}
+
+.controls .control .control-label
+{
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Roboto-Medium;
+}
+
+.catalog-paginator
+{
+  line-height: 18px;
+  font-family: Roboto-Medium;
+}
+/***********************************************************************************/
+
+/********** решение для кросс-браузерного задания цвета плэйсхолдерам***********/
+/*http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(153, 153, 153);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(153, 153, 153);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(153, 153, 153);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(153, 153, 153);
+}
+
+input[type="email"]
+{
+  line-height: 24px;
+  font-family: Roboto-Bold;
+}
+
+/*
+ Some browsers use additional default CSS for some input types (email, search).
+ These might affect the rendering in unexpected ways.
+ Use the properties -webkit-appearance and -moz-appearance to change that
+*/
+[type="email"], [type="search"]
+{
+  -moz-appearance:    textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+/********************************header*****************************************/
+header
+{
+  font-family: Roboto-Bold;
+}
+
+header .text-menu
+{
+  line-height: 18px;
+}
+
+header .menu-icons .icon-title
+{
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Roboto-Medium;
+}
+
+header .info-container .schedule
+{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+header .info-container .tel-number
+{
+  font-size: 22px;
+  line-height: 24px;
+}
+/********************************slider****************************************/
+.slider .slide
+{
+  color: white;
+  font-family: Roboto-Bold;
+}
+
+.slider .slide a
+{
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.slider .slide h3.title
+{
+  font-size: 60px;
+  line-height: 60.35px;
+  color: black; /* temporarily */
+}
+
+/********************************promos****************************************/
+.promos .promo
+{
+  color: white;
+  font-family: Roboto-Bold;
+}
+
+.promos .promo h1
+{
+  font-size: 22.97px;
+  line-height: 26.91px;
+  color: black; /* temporarily */
+}
+
+.promos .promo p
+{
+  font-size: 30.77px;
+  line-height: 42.3px;
+  color: black; /* temporarily */
+}
+
+.promos .promo a
+{
+  font-size: 11.81px;
+  line-height: 15.75px;
+  color: black; /* temporarily */
+}
+
+/************************ice-cream************************************/
+.ice-cream a.description,
+{
+  font-family: Roboto-Medium;
+}
+.ice-cream .price
+{
+  font-size: 45px;
+  line-height: 45px;
+  font-family: Roboto-Bold;
+}
+
+.ice-cream .price .per-kg
+{
+  font-size: 30px;
+}
+/********************************glacy-intro***********************************/
+.glacy-intro h1
+{
+  font-size: 24px;
+  line-height: 30px;
+  font-family: Roboto-Medium;
+}
+
+.glacy-intro .our-plus p
+{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/****************************blog and subscription*****************************/
+.communication .blog-ad h2
+{
+  font-family: Roboto-Medium;
+}
+
+.communication .blog-ad a
+{
+  font-size: 24px;
+  line-height: 30px;
+  font-family: Roboto-Bold;
+}
+
+.communication .subscription p
+{
+  color: rgb(90, 90, 90);
+}
+
+.communication .subscription form input[type="submit"]
+{
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Roboto-Bold;
+}
+
+/************************dialog***********************************************/
+.dialog
+{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dialog .address .location
+{
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Roboto-Bold;
+}
+
+.dialog .tel .number
+{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Roboto-Bold;
+}
+
+.dialog .tel .call-hours
+{
+  line-height: 22px;
+}
+
+.dialog a.open-form
+{
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Roboto-Bold;
+}
+
+/****************************footer********************************************/
+footer .docs
+{
+  font-size: 13px;
+  line-height: 18px;
+}
+
+footer .docs a:nth-child(1)
+{
+  font-family: Roboto-Bold;
+}
+
+footer .company
+{
+  font-size: 12px;
+  line-height: 18px;
+}
