@@ -1,9 +1,391 @@
+.fixator
+{
+  width: 1200px;
+  margin: 0 auto;
+  background: rgba(132, 157, 143, 0.8) url('../img/slider/slide_1.png') no-repeat center top;
+}
+
+.fixed-width-content
+{
+  width: 1146px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+#slider-btn-1,
+#slider-btn-2,
+#slider-btn-3
+{
+  display: none;
+}
+
+/*** header ***/
+header
+{
+  position: relative;
+  padding-top: 10px;
+  border: 1px solid brown;
+  min-height: 100px;
+}
+
+/*** logo ***/
+header img.logo
+{
+  position: absolute; /* it is the tallest element so other elements are aligned at the middle */
+  left: -5px;
+  top: 10px;
+}
+
+/*** menu ***/
+nav
+{
+  position: absolute;
+  left: 178px;
+  top: 30px;
+  font-size: 0px; /* delete inline-block spaces between <li> tags */
+}
+
+nav.text-menu ul
+{
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+nav.text-menu li
+{
+  display: inline-block;
+  margin-right: 26px;
+  font-size: 16px;
+}
+
+nav.text-menu li:last-child
+{
+  margin-right: 0;
+}
+
+/*** menu-buttons ***/
+.menu-controls
+{
+  position: absolute;
+  right: 0px;
+  top: 23px;
+  font-size: 0px;
+}
+
+.menu-controls .menu-control
+{
+  display: inline-block;
+  padding-top: 6px;
+  padding-left: 16px;
+  margin-left: 10px;
+}
+
+.menu-controls .menu-control .search
+{
+  padding: 0px;
+  margin-left: 6px;
+}
+
+.info-container
+{
+  position: absolute;
+  right: 0px;
+  top: 73px;
+}
+
+/*** slider ***/
+.slider
+{
+  height: 210px;
+  margin: 370px auto 0px;
+  width: 670px;
+  border: 1px solid brown;
+}
+
+.slider .slide:nth-child(n+2)
+{
+  display: none;
+}
+
+.slider .slide
+{
+  text-align: center;
+}
+
+.slider .slide .title
+{
+  /* remove the default empty space */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*** promos ***/
+.promos
+{
+  margin-top: 41px; /* distance to slider */
+  /*background-color: rgba(255, 0, 0, 0.1);*/
+}
+
+.promos .promo
+{
+  width: 560px;
+  min-height: 230px;
+  border: 1px solid brown;
+}
+
+.promos .strawberry
+{
+  float: left;
+}
+
+.promos .chocolate
+{
+  float: right;
+}
+
+.promos::after
+{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*** popular-ice-creams ***/
+.popular-ice-creams
+{
+  margin-top: 40px; /* distance to promos */
+  border: 1px solid brown;
+  font-size: 0px; /* delete space character between .ice-cream blocks */
+}
+
+.popular-ice-creams .ice-cream
+{
+  display: inline-block;
+  position: relative; /* price and hit label are absolute */
+  width: 266.5px;
+  margin-right: 26px;
+  vertical-align: top;
+}
+
+.ice-cream:last-child
+{
+  margin-right: 0px;
+}
+
+.popular-ice-creams .ice-cream .title
+{
+  /* margin-top: 14px; distance to ice-cream picture */
+  margin: 14px 10px 0px;
+  text-align: center;
+}
+
+.popular-ice-creams .ice-cream .price
+{
+  position: absolute;
+  left: 0px;
+  top: 208.5px;
+}
+
+.popular-ice-creams .ice-cream .hit-label
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/*** glacy-intro ***/
+.glacy-intro
+{
+  margin-top: 37px; /* distance to .popular-ice-creams block*/
+  padding-left: 21px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 0px;
+  border: 1px solid brown;
+}
+
+.glacy-intro h1
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.glacy-intro .our-plus
+{
+  display: inline-block;
+  position: relative; /* icon is absolute */
+  vertical-align: top;
+  width: 482px;
+  margin-top: 26px; /* distance to intro <h1> tag */
+  padding-left: 57px;
+  background-image: url('../img/glacy-intro/waffle.png');
+  background-repeat: no-repeat;
+}
+
+.glacy-intro .our-plus p
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.glacy-intro .out-plus .icon
+{
+  position: absolute;
+}
+
+.glacy-intro .our-plus .icon-own-means
+{
+  background: url('../img/glacy_intro/Мороженко.png') no-repeat;
+  left: 0px;
+
+}
+
+.glacy-intro .our-plus .icon-our-providers
+{
+  background: url('../img/glacy_intro/Корова.png') no-repeat;
+}
+
+.glacy-intro .our-plus .icon-raw-milk
+{
+  background: url('../img/glacy_intro/Листик.png') no-repeat;
+}
+
+.glacy-intro .our-plus .icon-delivery
+{
+  background: url('../img/glacy_intro/Градусник.png') no-repeat;
+}
+
+/*** blog ***/
+.communication
+{
+  margin-top: 41px;
+}
+
+.communication .block
+{
+  width: 560px;
+  height: 220px;
+  box-sizing: border-box;
+  border: 1px solid brown;
+}
+
+.blog-ad
+{
+  float: left;
+  background-image: url('../img/blog/Клубничный фон.png');
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.blog-ad .new-in-blog
+{
+  margin-bottom: 10px;
+}
+
+.blog-ad h2
+{
+  width: 285px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.subscription
+{
+  float: right;
+  background-image: url('../img/blog/Подложка.png');
+  background-repeat: no-repeat;
+  padding-top: 35px;
+  padding-left: 26px;
+}
+
+.subscription p
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 506px;
+}
+
+.subscription form
+{
+  margin-top: 35px;
+}
+
+.subscription input[type="email"]
+{
+  width: 328px;
+  padding: 12px 14px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.communication::after
+{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*** map temporary mockup without JavaScript ***/
+.map img
+{
+  margin-left: -28px;
+  margin-top: 39px;
+  border: 1px solid brown;
+}
+
+.map .dialog
+{
+  display: none;
+}
+
+/*** footer ***/
+footer .social-networks
+{
+  margin-top: 36px;
+}
+
+.social-networks .icon
+{
+  margin-right: 12px;
+}
+
+.social-networks .icon-twitter
+{
+  background-image: url('../img/footer/social_networks/Твитер.png');
+}
+
+.social-networks .icon-instagram
+{
+  background-image: url('../img/footer/social_networks/Инста.png');
+}
+
+.social-networks .icon-fb
+{
+  background-image: url('../img/footer/social_networks/ФБ.png');
+}
+
+.social-networks .icon-vk
+{
+  background-image: url('../img/footer/social_networks/ВК.png');
+}
+
+/******************************** характеристики шрифтов****************************/
 body
 {
   font-size: 16px;
   line-height: 22px;
   color: rgb(50, 50, 50);
-  font-family: Roboto-Regular;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+a
+{
+  color: white;
 }
 
 /********************************catalog.html***************************************/
@@ -17,20 +399,20 @@ h1.current-ice-cream-type
 .controls .control
 {
   line-height: 18px;
-  font-family: Roboto-Medium;
+  font-weight: 500;
 }
 
 .controls .control .control-label
 {
   font-size: 14px;
   line-height: 16px;
-  font-family: Roboto-Medium;
+  font-weight: 500;
 }
 
 .catalog-paginator
 {
   line-height: 18px;
-  font-family: Roboto-Medium;
+  font-weight: 500;
 }
 /***********************************************************************************/
 
@@ -54,8 +436,9 @@ h1.current-ice-cream-type
 
 input[type="email"]
 {
+  font-size: 16px;
   line-height: 24px;
-  font-family: Roboto-Bold;
+  font-weight: 400;
 }
 
 /*
@@ -73,7 +456,8 @@ input[type="email"]
 /********************************header*****************************************/
 header
 {
-  font-family: Roboto-Bold;
+  font-weight: 700;
+  color: white;
 }
 
 header .text-menu
@@ -81,11 +465,15 @@ header .text-menu
   line-height: 18px;
 }
 
-header .menu-icons .icon-title
+header .text-menu a
+{
+}
+
+header .menu-controls .icon-title
 {
   font-size: 14px;
   line-height: 16px;
-  font-family: Roboto-Medium;
+  font-weight: 500;
 }
 
 header .info-container .schedule
@@ -103,63 +491,62 @@ header .info-container .tel-number
 .slider .slide
 {
   color: white;
-  font-family: Roboto-Bold;
+  font-weight: 700;
 }
 
 .slider .slide a
 {
   font-size: 32px;
   line-height: 44px;
+  font-weight: 400;
 }
 
-.slider .slide h3.title
+.slider .slide .title
 {
   font-size: 60px;
   line-height: 60.35px;
-  color: black; /* temporarily */
 }
 
 /********************************promos****************************************/
 .promos .promo
 {
   color: white;
-  font-family: Roboto-Bold;
+  font-weight: 700;
 }
 
 .promos .promo h1
 {
-  font-size: 22.97px;
-  line-height: 26.91px;
-  color: black; /* temporarily */
+  font-size: 35px;
+  line-height: 41px;
 }
 
 .promos .promo p
 {
-  font-size: 30.77px;
-  line-height: 42.3px;
-  color: black; /* temporarily */
+  font-size: 18px;
 }
 
 .promos .promo a
 {
-  font-size: 11.81px;
-  line-height: 15.75px;
-  color: black; /* temporarily */
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /************************ice-cream************************************/
-.ice-cream a.description,
+.popular-ice-creams .ice-cream .title
 {
-  font-family: Roboto-Medium;
+  font-size: 16px;
+  font-weight: 500;
 }
-.ice-cream .price
+
+.popular-ice-creams .ice-cream .price
 {
   font-size: 45px;
   line-height: 45px;
-  font-family: Roboto-Bold;
+  font-weight: 700;
+  color: white;
 }
 
-.ice-cream .price .per-kg
+.popular-ice-creams .ice-cream .price .per-kg
 {
   font-size: 30px;
 }
@@ -168,7 +555,7 @@ header .info-container .tel-number
 {
   font-size: 24px;
   line-height: 30px;
-  font-family: Roboto-Medium;
+  font-weight: 500;
 }
 
 .glacy-intro .our-plus p
@@ -178,16 +565,19 @@ header .info-container .tel-number
 }
 
 /****************************blog and subscription*****************************/
-.communication .blog-ad h2
+.communication .blog-ad new-in-blog
 {
-  font-family: Roboto-Medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.communication .blog-ad a
+.communication .blog-ad h2 a
 {
   font-size: 24px;
   line-height: 30px;
-  font-family: Roboto-Bold;
+  font-weight: 700;
+  color: rgb(50, 50, 50);
 }
 
 .communication .subscription p
@@ -199,7 +589,7 @@ header .info-container .tel-number
 {
   font-size: 18px;
   line-height: 24px;
-  font-family: Roboto-Bold;
+  font-weight: 700;
 }
 
 /************************dialog***********************************************/
@@ -213,14 +603,14 @@ header .info-container .tel-number
 {
   font-size: 18px;
   line-height: 24px;
-  font-family: Roboto-Bold;
+  font-weight: 700;
 }
 
 .dialog .tel .number
 {
   font-size: 18px;
   line-height: 22px;
-  font-family: Roboto-Bold;
+  font-weight: 700;
 }
 
 .dialog .tel .call-hours
@@ -232,7 +622,7 @@ header .info-container .tel-number
 {
   font-size: 18px;
   line-height: 24px;
-  font-family: Roboto-Bold;
+  font-weight: 700;
 }
 
 /****************************footer********************************************/
@@ -244,7 +634,7 @@ footer .docs
 
 footer .docs a:nth-child(1)
 {
-  font-family: Roboto-Bold;
+  font-weight: 700;
 }
 
 footer .company
