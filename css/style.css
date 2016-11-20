@@ -230,16 +230,18 @@ nav.text-menu li:last-child
   margin-bottom: 0px;
 }
 
-.glacy-intro .out-plus .icon
+.glacy-intro .our-plus .icon
 {
+  width: 48px;
+  height: 48px;
   position: absolute;
+  left: 0px;
+  top: -10px;
 }
 
 .glacy-intro .our-plus .icon-own-means
 {
   background: url('../img/glacy_intro/Мороженко.png') no-repeat;
-  left: 0px;
-
 }
 
 .glacy-intro .our-plus .icon-our-providers
@@ -343,34 +345,104 @@ nav.text-menu li:last-child
 }
 
 /*** footer ***/
+footer
+{
+  height: 103px;
+  position: relative;
+}
+
 footer .social-networks
 {
+  display: inline-block;
+  vertical-align: top;
   margin-top: 36px;
 }
 
-.social-networks .icon
+footer .social-networks .icon
 {
+  display: inline-block;
+  vertical-align: top;
+  width: 38px;
+  height: 38px;
   margin-right: 12px;
 }
 
-.social-networks .icon-twitter
+footer .social-networks .icon-twitter
 {
-  background-image: url('../img/footer/social_networks/Твитер.png');
+  background: url('../img/footer/social_networks/Твитер.png') no-repeat;
 }
 
-.social-networks .icon-instagram
+footer .social-networks .icon-instagram
 {
-  background-image: url('../img/footer/social_networks/Инста.png');
+  background: url('../img/footer/social_networks/Инста.png') no-repeat;
 }
 
-.social-networks .icon-fb
+footer .social-networks .icon-fb
 {
-  background-image: url('../img/footer/social_networks/ФБ.png');
+  background: url('../img/footer/social_networks/ФБ.png') no-repeat;
 }
 
-.social-networks .icon-vk
+footer .social-networks .icon-vk
 {
-  background-image: url('../img/footer/social_networks/ВК.png');
+  background: url('../img/footer/social_networks/ВК.png') no-repeat;
+}
+
+footer .docs
+{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 356px;
+  margin-top: 36px;
+  margin-left: 236px;
+}
+
+footer .docs a:nth-of-type(1)
+{
+  margin-right: 32px;
+}
+
+footer .docs a:nth-of-type(3)
+{
+  margin-right: 44px;
+}
+
+footer .docs .icon-heart
+{
+  position: absolute;
+  left: -23px;
+  top: 2.5px;
+  background: url('../img/footer/Сердце.png') no-repeat;
+}
+
+footer .docs .icon
+{
+  display: inline-block;
+  vertical-align: top;
+  width: 38px;
+  height: 38px;
+}
+
+footer .company
+{
+  margin-right: 17px;
+}
+
+footer img.logo
+{
+  margin-top: 18px;
+  margin-right: 80px;
+  margin-bottom: 0px;
+}
+
+footer .left-block
+{
+  float: left;
+}
+
+footer .right-block
+{
+  float: right;
 }
 
 /******************************** характеристики шрифтов****************************/
@@ -641,4 +713,5 @@ footer .company
 {
   font-size: 12px;
   line-height: 18px;
+  color: white;
 }
