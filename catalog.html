@@ -10,53 +10,52 @@
 
   <body>
 
-    <div class="fixator"><!--1240 px width-->
+    <div style="background-image: none;" class="fixator"><!--1240 px width-->
 
       <div class="fixed-width-content"><!--100% width and 20px padding-->
 
         <header>
-
-          <a href="#"><img style="background-color: black;" src="img/header/Logo.png" class="logo" alt="Глейси Шоп лого"></a> <!--absolute-->
+          <img class="logo" src="img/header/Logo.png"> <!--absolute--> <!--absolute-->
 
           <nav class="text-menu"><!--560px-->
             <ul><!--remove padding-left, margin-top, and margin-bottom-->
-              <li><a href="#" visited>Компания</a></li>
+              <li><a href="#">Каталог</a></li>
               <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">О компании</a></li>
             </ul>
           </nav>
 
-          <div class="menu-icons"><!--560px-->
-              <div class="search">
+          <div class="menu-controls"><!--560px-->
+              <div class="menu-control search">
                 <div class="icon"></div>
               </div>
 
-              <div class="entrance">
+              <div class="menu-control entrance">
                 <div class="icon"></div>
                 <span class="icon-title">Вход</span>
               </div>
 
-              <div class="bin">
+              <div class="menu-control bin">
                 <div icon="icon"></div>
-                <span class="icon-title">2 товара</span>
+                <span class="icon-title">Пусто</span>
               </div>
-          </div><!--menu-icons-->
+          </div><!--menu-controls-->
 
           <section class="info-container">
             <section class="schedule">С 10 до 20, ежедневно</section>
             <section class="tel-number">8 812 450-25-25</section>
           </section>
 
+          <section class="breadcrumbs">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <span class="current-breadcrumb">Сливочное</span>
+          </section>
         </header>
 
         <main>
-          <section class="breadcrumbs">
-            <a href="#">Главная</a> >>
-            <a href="#">Каталог</a> >>
-            <span class="current-breadcrumb">Сливочное</span>
-          </section>
 
-          <h1 class="current-ice-cream-type">Сливочное мороженое</h1>
+          <h1>Сливочное мороженое</h1>
 
           <section class="controls">
             <div class="control">
@@ -70,9 +69,9 @@
 
             <div class="control">
               <label class="control-label">Цена:
-                <input type="text" class="min-price" name="min-price" value="100"></div> руб.
+                <input type="text" class="min-price" name="min-price" value="100"> руб.
                 -
-                <input type="text" class="max-price" name="max-price" value="500"></div> руб.
+                <input type="text" class="max-price" name="max-price" value="500"> руб.
               </label>
               <div class="range">
                 <!--implementation-->
@@ -103,69 +102,115 @@
 
           <section class="catalog"><!--table-->
             <ul><!--table-row-->
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/hits/orange.png" alt="Orange ice cream image" class="picture">
-                <a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                <div class="price">310&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/hits/orange.png" alt="Orange ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                  </h1>
+                  <div class="price">310&#8381;<span class="per-kg">/кг</span></div>
+                </article>
               </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/hits/coffee.png" alt="Cofee ice cream image" class="picture">
-                <a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
-                <div class="price">380&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/hits/coffee.png" alt="Cofee ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
+                  </h1>
+                  <div class="price">380&#8381;<span class="per-kg">/кг</span></div>
+                </article>
               </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/hits/strawberry.png" alt="Strawberry ice cream image" class="picture">
-                <a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                <div class="price">355&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/hits/strawberry.png" alt="Strawberry ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                  </h1>
+                  <div class="price">355&#8381;<span class="per-kg">/кг</span></div>
+                </article>
               </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/hits/meshanina.png" alt="Creme Brulee ice cream image" class="picture">
-                <a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
-                <div class="price">415&#8381;<span class="per-kg">/кг</span></div>
-              </li>
-            </ul>
-            <ul><!--table-row-->
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/cowberry.png" alt="Coweberry ice cream image" class="picture">
-                <a href="#" class="description">Сливочное с брусничным джемом</a>
-                <div class="price">325&#8381;<span class="per-kg">/кг</span></div>
-              </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/blueberry.png" alt="Blueberry ice cream image" class="picture">
-                <a href="#" class="description">Сливочно-черничное с цельными ягодами черники</a>
-                <div class="price">410&#8381;<span class="per-kg">/кг</span></div>
-              </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/lemon.png" alt="Lemon ice cream image" class="picture">
-                <a href="#" class="description">Сливочно-лимонное с карамельной присыпкой</a>
-                <div class="price">375&#8381;<span class="per-kg">/кг</span></div>
-              </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/chocoflakes.png" alt="Chocolate flakes ice cream image" class="picture">
-                <a href="#" class="description">Сливочное с шоколадной стружкой</a>
-                <div class="price">320&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/hits/meshanina.png" alt="Creme Brulee ice cream image" class="picture">
+                  <h1 class="title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h1>
+                  <div class="price">415&#8381;<span class="per-kg">/кг</span></div>
+                <article>
               </li>
             </ul>
             <ul><!--table-row-->
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/vanilla.png" alt="Vanilla ice cream image" class="picture">
-                <a href="#" class="description">Сливочно-ванильное с кусочками шоколада</a>
-                <div class="price">440&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/cowberry.png" alt="Coweberry ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочное с брусничным джемом</a>
+                  </h1>
+                  <div class="price">325&#8381;<span class="per-kg">/кг</span></div>
+                </article>
               </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/menthol.png" alt="Menthol ice cream image" class="picture">
-                <a href="#" class="description">Сливочноe с ментоловым сиропом</a>
-                <div class="price">435&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/blueberry.png" alt="Blueberry ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочно-черничное с цельными ягодами черники</a>
+                  </h1>
+                  <div class="price">410&#8381;<span class="per-kg">/кг</span></div>
+                </article>
               </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/black-chocolate.png" alt="Black chocolate ice cream image" class="picture">
-                <a href="#" class="description">Сливочное с кусочками черного шоколада</a>
-                <div class="price" style="background-color: red;">355&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/lemon.png" alt="Lemon ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочно-лимонное с карамельной присыпкой</a>
+                  </h1>
+                  <div class="price">375&#8381;<span class="per-kg">/кг</span></div>
+                </article>
               </li>
-              <li class="ice-cream"><!--table-cell-->
-                <img src="img/ice-creams/mint.png" alt="Mint ice cream image" class="picture">
-                <a href="#" class="description">Сливочное с мятным сиропом</a>
-                <div class="price">420&#8381;<span class="per-kg">/кг</span></div>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/chocoflakes.png" alt="Chocolate flakes ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочное с шоколадной стружкой</a>
+                  </h1>
+                  <div class="price">320&#8381;<span class="per-kg">/кг</span></div>
+                </article>
+              </li>
+            </ul>
+            <ul><!--table-row-->
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/vanilla.png" alt="Vanilla ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочно-ванильное с кусочками шоколада</a>
+                  </h1>
+                  <div class="price">440&#8381;<span class="per-kg">/кг</span></div>
+                </article>
+              </li>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/menthol.png" alt="Menthol ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочноe с ментоловым сиропом</a>
+                  </h1>
+                  <div class="price">435&#8381;<span class="per-kg">/кг</span></div>
+                </article>
+              </li>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/black-chocolate.png" alt="Black chocolate ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочное с кусочками черного шоколада</a>
+                  </h1>
+                  <div class="price" style="background-color: red;">355&#8381;<span class="per-kg">/кг</span></div>
+                </article>
+              </li>
+              <li><!--table-cell-->
+                <article class="ice-cream">
+                  <img src="img/ice-creams/mint.png" alt="Mint ice cream image" class="picture">
+                  <h1 class="title">
+                    <a href="#" class="description">Сливочное с мятным сиропом</a>
+                  </h1>
+                  <div class="price">420&#8381;<span class="per-kg">/кг</span></div>
+                </article>
               </li>
             </ul>
           </section><!--catalog-->
@@ -182,25 +227,30 @@
         </main>
 
         <footer>
-          <div class="social-networks">
-            <div class="icon icon-twitter"></div>
-            <div class="icon icon-instagram"></div>
-            <div class="icon icon-fb"></div>
-            <div class="icon icon-vk"></div>
-          </div>
+          <div class="left-block">
+            <div class="social-networks">
+              <a class="icon icon-twitter"></a>
+              <a class="icon icon-instagram"></a>
+              <a class="icon icon-fb"></a>
+              <a class="icon icon-vk"></a>
+            </div>
 
-          <div class="docs">
-            <a href="#">Для поставщиков</a>
-            <a href="#">Наши документы</a>
-            <a href="#">О производстве</a>
-            <a href="#">Экологические стандарты</a>
-            <div class="icon icon-heart"></div>
-          </div>
+            <div class="docs">
+              <a href="#">Для поставщиков</a>
+              <a href="#">Наши документы</a>
+              <br>
+              <a href="#">О производстве</a>
+              <a href="#">Экологические стандарты</a>
+              <div class="icon icon-heart"></div>
+            </div>
+          </div> <!-- left-block -->
 
-          <div class="company">
-            <img src="img/" alt="Глейси Шоп лого">
-            Сделано в <a href="#">HTML Academy</a> &copy; 2016
-          </div>
+          <div class="right-block">
+            <img class="logo" src="img/footer/Лого.png" height="40" alt="Глейси Шоп лого">
+            <div class="company">
+              Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &copy; 2016
+            </div>
+          </div> <!-- right-block -->
         </footer>
 
       </div><!--fixed-width-content-->

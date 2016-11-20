@@ -133,16 +133,39 @@ nav.text-menu li:last-child
   width: 560px;
   min-height: 230px;
   border: 1px solid brown;
+  padding: 20px 21px 24px 20px;
+  box-sizing: border-box;
+}
+
+.promos .promo h1,
+.promos .promo p
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.promos .promo p
+{
+  margin-top: 21px;
+}
+
+.promos .promo a.button
+{
+  display: block;
+  margin-top: 43px;
+  margin-left: 350px;
 }
 
 .promos .strawberry
 {
   float: left;
+  background: url('../img/promos/Малиновый фон.png') no-repeat;
 }
 
 .promos .chocolate
 {
   float: right;
+  background: url('../img/promos/Шоколадный фон.png') no-repeat;
 }
 
 .promos::after
@@ -349,6 +372,7 @@ footer
 {
   height: 103px;
   position: relative;
+  border: 1px solid brown;
 }
 
 footer .social-networks
@@ -426,13 +450,14 @@ footer .docs .icon
 footer .company
 {
   margin-right: 17px;
+  margin-top: 6px;
 }
 
 footer img.logo
 {
+  display: block;
   margin-top: 18px;
   margin-right: 80px;
-  margin-bottom: 0px;
 }
 
 footer .left-block
@@ -443,6 +468,73 @@ footer .left-block
 footer .right-block
 {
   float: right;
+}
+
+/*** catalog ***/
+
+header .breadcrumbs
+{
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+}
+
+header .breadcrumbs a::after
+{
+  content: "»";
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 7px;
+}
+
+main
+{
+  position: relative; /* to position paginator */
+  padding-bottom: 30px; /* space for paginator */
+  
+  margin-bottom: 34px; /* distance to footer */
+}
+
+main > h1
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 8px;
+  border: 1px solid brown;
+}
+
+main > .controls
+{
+  width: 839px;
+  height: 138px;
+  margin-top: 32px;
+  border: 1px solid brown;
+}
+
+.catalog
+{
+  display: table;
+  border: 1px solid brown;
+  margin-top: 34px;
+}
+
+.catalog ul
+{
+  display: table-row;
+}
+
+.catalog ul li
+{
+  display: table-cell;
+  background-color: lightblue;
+  height: 406px;
+}
+
+.catalog-paginator
+{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 /******************************** характеристики шрифтов****************************/
@@ -461,11 +553,26 @@ a
 }
 
 /********************************catalog.html***************************************/
+header .breadcrumbs
+{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
 h1.current-ice-cream-type
 {
   font-size: 35px;
   line-height: 41px;
   font-family: Roboto-Bold;
+}
+
+main > h1
+{
+  font-size: 35px;
+  line-height: 41px;
+  color: white;
+  font-weight: 700;
 }
 
 .controls .control
