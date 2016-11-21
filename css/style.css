@@ -53,14 +53,14 @@ nav.text-menu ul
   list-style: none;
 }
 
-nav.text-menu li
+.main-menu > li
 {
   display: inline-block;
   margin-right: 26px;
-  font-size: 16px;
+  position: relative; /* to underline anchor */
 }
 
-nav.text-menu li:last-child
+.main-menu > li:last-child
 {
   margin-right: 0;
 }
@@ -70,18 +70,18 @@ nav.text-menu li:last-child
   display: block;
   padding: 8px 14px;
   background: none;
-  position: relative; /* to underline anchor */
 }
 
-.main-menu > li > a.underline::after
+.main-menu > li > a::after
 {
   display: block;
-  width: 100%;
+  padding: 0;
+  margin: 0;
   content: "";
   position: absolute;
   left: 14px;
   right: 14px;
-  top: 34px;
+  top: 26px;
   height: 1px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
