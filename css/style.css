@@ -65,6 +65,34 @@ nav.text-menu li:last-child
   margin-right: 0;
 }
 
+.main-menu > li > a
+{
+  display: block;
+  padding: 8px 14px;
+  background: none;
+  position: relative; /* to underline anchor */
+}
+
+.main-menu > li > a.underline::after
+{
+  display: block;
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 34px;
+  height: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-menu > li > a:hover
+{
+  background: #f7f6f3 none repeat scroll 0 0;
+     border-radius: 30px;
+     color: #333;
+}
+
 /*** menu-buttons ***/
 .menu-controls
 {
@@ -491,7 +519,7 @@ main
 {
   position: relative; /* to position paginator */
   padding-bottom: 30px; /* space for paginator */
-  
+
   margin-bottom: 34px; /* distance to footer */
 }
 
@@ -550,6 +578,7 @@ body
 a
 {
   color: white;
+  text-decoration: none;
 }
 
 /********************************catalog.html***************************************/
@@ -639,13 +668,11 @@ header
   color: white;
 }
 
-header .text-menu
+header .main-menu a
 {
+  font-size: 16px;
   line-height: 18px;
-}
-
-header .text-menu a
-{
+  font-weight: 700;
 }
 
 header .menu-controls .icon-title
