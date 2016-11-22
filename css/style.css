@@ -45,7 +45,7 @@ nav
   font-size: 0px; /* delete inline-block spaces between <li> tags */
 }
 
-nav.text-menu ul
+.main-menu
 {
   padding-left: 0;
   margin-top: 0;
@@ -56,20 +56,14 @@ nav.text-menu ul
 .main-menu > li
 {
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 11px;
   position: relative; /* to underline anchor */
+  z-index: 0;
 }
 
 .main-menu > li:last-child
 {
   margin-right: 0;
-}
-
-.main-menu > li > a
-{
-  display: block;
-  padding: 8px 14px;
-  background: none;
 }
 
 .main-menu > li > a::after
@@ -83,14 +77,129 @@ nav.text-menu ul
   right: 14px;
   top: 26px;
   height: 1px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-menu > li > a.underline
+{
+  display: block;
+  padding: 8px 14px;
+  background: none;
+  box-shadow: none;
 }
 
 .main-menu > li > a:hover
 {
-  background: #f7f6f3 none repeat scroll 0 0;
-     border-radius: 30px;
-     color: #333;
+  background-color: #f7f6f3;
+  border-radius: 30px;
+  color: #333;
+}
+
+.main-menu > li > a:active
+{
+  background-color: #ededed;
+  box-shadow: 0px 2px 1px #696969 inset;
+  color: #333;
+}
+
+.main-menu > li:hover .sub-menu
+{
+  display: block;
+}
+
+.main-menu .sub-menu
+{
+  display: none;
+  width: 152px;
+  /* set the menu position */
+  position: absolute;
+  top: 37px;
+  left: 0px;
+  z-index: 1;
+  /* delete default list properties */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* set decoration */
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background: #fff;
+
+  /*padding-left: 6px;
+  padding-right: 9px;*/
+}
+
+.main-menu .sub-menu > li:first-child
+{
+  position: relative;
+}
+
+.main-menu .sub-menu > li:first-child a
+{
+  color: black;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.main-menu .sub-menu > li a
+{
+  display: block; /* <a> takes the whole parent's width */
+  padding-bottom: 10px;
+  padding-left: 21px;
+  padding-top: 10px;
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.main-menu .sub-menu > li:first-child > a
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-menu .sub-menu > li:nth-child(2) > a
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-menu .sub-menu > li:last-child > a
+{
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main-menu .sub-menu > li > a.underline::after
+{
+  content: ""; /* чтобы отрисовалось */
+  position: absolute;
+  top: 35px;
+  right: 9px;
+  left: 6px;
+  height: 1px;
+  background-color: rgba(53, 53, 53, 0.2);
+}
+
+.main-menu .sub-menu > li a:hover
+{
+  background-color: rgb(251, 222, 215);
+}
+
+.main-menu .sub-menu > li a:active
+{
+  background-color: rgb(246, 181, 165);
+}
+
+.main-menu .sub-menu > li a.opened /* for catalog.html only */
+{
+  color: white;
+  background-color: rgb(208, 112, 88);
 }
 
 /*** menu-buttons ***/
@@ -537,25 +646,6 @@ main > .controls
   height: 138px;
   margin-top: 32px;
   border: 1px solid brown;
-}
-
-.catalog
-{
-  display: table;
-  border: 1px solid brown;
-  margin-top: 34px;
-}
-
-.catalog ul
-{
-  display: table-row;
-}
-
-.catalog ul li
-{
-  display: table-cell;
-  background-color: lightblue;
-  height: 406px;
 }
 
 .catalog-paginator
