@@ -5,6 +5,22 @@
   background: rgba(132, 157, 143, 0.8) url('../img/slider/slide_1.png') no-repeat center top;
   transition: background-image 3s ease 0s, background-color 0.5s ease 0s;
 }
+/* Псевдоэлементы с изображениями нужны только для предзагрузки картинок, чтобы они уже были в кеше в момент переключения слайдов и сразу отображались */
+/*
+.site-wrapper:before,
+.site-wrapper:after {
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper:before {
+  background-image: url("slide-2.png");
+}
+
+.site-wrapper:after {
+  background-image: url("slide-3.png");
+}
+*/
 
 .fixed-width-content
 {
@@ -239,8 +255,6 @@ nav
 {
   height: 210px;
   margin: 285px auto 0px;
-  border: 1px solid brown;
-  background: gray;
   position: relative;
 }
 
